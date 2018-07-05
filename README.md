@@ -1,3 +1,92 @@
+# Git Training
+* git will store files in repository and it has four area of memory areas
+   #STASH(temporary storeage area)  #WORKING AREA(current working area)  #INDEX(place files before commit)  #REPOSITORY(has all history)
+                                     add                                  commit                             checkout
+                                     remove
+                                     mv
+#Working Area:
+#tree ----- shows tree view
+
+#Repository:
+.git has git info
+Object has the info and db
+each commit is a snapshots in repository
+head :current pointing commit
+branch:
+
+#Index:
+index is unique to git
+git diff will compare index data and working area data
+git diff --cached will compare stage file and repository file
+#WorkFlow:
+*edit file stage file commit file 
+edit use vim filename --- add data
+git status 
+git add filename
+git status
+git diff
+git diff --cached
+git commit -m "description"
+
+*repository to working area
+git checkout branch : copies data to index and working area
+git rm filename : removing file from index area
+git mv newfilename old filename : will rename
+git diff branch1 branch2
+
+
+# git log --graph --decorate --online
+
+# git show xxxx
+
+# git show branchname
+
+# git show HEAD
+
+#git show ^HEAD
+
+#git show HEAD~2
+
+# git blame filename
+
+#git diff HEAD HEAD-2
+
+# git diff branch1 branch2
+
+# git log --patch gives u actual changes
+
+git log --grep apples --online
+
+git-grep
+
+git log -3 --online
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # gittest
 Git config set properties:
 # git config --global user.name "Hemachandra"
